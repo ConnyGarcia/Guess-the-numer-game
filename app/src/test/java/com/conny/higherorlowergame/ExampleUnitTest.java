@@ -1,4 +1,4 @@
-package com.conny.higerorlowergame;
+package com.conny.higherorlowergame;
 
 import org.junit.Test;
 

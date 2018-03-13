@@ -1,4 +1,4 @@
-package com.conny.higerorlowergame;
+package com.conny.higherorlowergame;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 import java.util.Random ;
 import android.text.InputFilter;
-import android.text.Spanned;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
         num = rand.nextInt(21);
     }
 
+    public void Toastie(String string){
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
+    }
+
     public void EnterNum (View view){
 
         EditText Number = (EditText) findViewById(R.id.Number);
@@ -31,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
         int guessNumber = Integer.parseInt(Number.getText().toString());
 
         if (num < guessNumber) {
-            Toast.makeText(this, "Lower", Toast.LENGTH_SHORT).show();
+            Toastie("Lower!");
         }
         else if (num > guessNumber){
-            Toast.makeText(this, "Higher", Toast.LENGTH_SHORT).show();
+            Toastie("Higher!");
         }
         else {
-            Toast.makeText(this, "You got it!", Toast.LENGTH_SHORT).show();
+            Toastie("You got it winner!");
         }
 
     }

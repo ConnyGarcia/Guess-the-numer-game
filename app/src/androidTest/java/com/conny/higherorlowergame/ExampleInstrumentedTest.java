@@ -1,4 +1,4 @@
-package com.conny.higerorlowergame;
+package com.conny.higherorlowergame;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
