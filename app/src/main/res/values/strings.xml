@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Higer or Lower game</string>
+    <string name="RandomNumber">I am thinking in a number between 0 and 20</string>
+    <string name="adivina">Adivina</string>
+    <string name="Adivina">TextView</string>
+    <string name="button">Button</string>
+    <string name="click">Click</string>
+    <string name="take_a_guess">Take a Guess</string>
+</resources>
